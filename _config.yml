@@ -1,0 +1,103 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+#
+# If you need help with YAML syntax, here are some quick references for you:
+# https://learn-the-web.algonquindesign.ca/topics/markdown-yaml-cheat-sheet/#yaml
+# https://learnxinyminutes.com/docs/yaml/
+#
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+
+title: Tipi Natursein
+logo: /assets/tipi-logo.svg
+contact_email: tipinatursein
+contact_domain: gmail.com
+# email: your-email@example.com
+description: Tipi Natursein – Naturverbundene Seminare, Retreats und Kreise. Tiyoweh-Wochenenden, Mond-Frauen-Treffen, Storytelling und Feste in der Natur.
+baseurl: "" # empty for custom domain (served from root); was /tipi for github.io/tipi
+
+# Show post excerpts in lists (default: first paragraph)
+# Optional: excerpt_separator: "<!--more-->" – then add <!--more--> in posts to cut
+show_excerpts: false
+
+# Header navigation – flat pages or dropdown groups
+header_nav:
+  - page: about.markdown
+  - dropdown:
+      title: Übernachtungsangebote
+      link: false
+      children:
+        - label: Tiyoweh-Wochenende (Stille Retreat)
+          format: tiyoweh
+        - label: Julfest
+          format: julfest
+        - label: Sommer = Fülle
+          format: sommer-fulle
+        - label: Aspekte der Weiblichkeit
+          format: aspekte-weiblichkeit
+  - dropdown:
+      title: Gemeinschaft stärken
+      link: false
+      children:
+        - label: Storytelling
+          format: storytelling
+        - label: Feste
+          format: feste
+  - dropdown:
+      title: Einzelsitzungen
+      link: false
+      children:
+        - label: Berührende Hände
+          format: beruehrende-haende
+        - label: Naturverbundene Prozess Begleitung
+          format: einzelcoaching
+  - format: mond-frauen-treffen
+    label: Mond-Frauen-Kreis
+  - page: impressum.markdown
+url: "https://tipi-natursein.de" # custom domain
+# twitter_username: jekyllrb
+# github_username:  jekyll
+
+# Build settings
+future: true  # Events are dated in the future; include them in builds
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Custom collections
+collections:
+  formats:
+    output: true
+    permalink: /formate/:name/
+
+# Exclude from processing.
+# The following items will not be processed, by default.
+# Any item listed under the `exclude:` key here will be automatically added to
+# the internal "default list".
+#
+# Excluded items can be processed by explicitly listing the directories or
+# their entries' file path in the `include:` list.
+#
+exclude:
+  - material/
+  - scripts/
+#   - .sass-cache/
+#   - .jekyll-cache/
+#   - gemfiles/
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules/
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/

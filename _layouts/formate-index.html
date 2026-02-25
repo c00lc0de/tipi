@@ -1,0 +1,20 @@
+---
+layout: default
+---
+<div class="home">
+  {%- if site.formats.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.title }}</h2>
+    <ul class="post-list">
+      {%- assign sorted_formats = site.formats | sort: "title" -%}
+      {%- for format in sorted_formats -%}
+      <li>
+        <h3>
+          <a class="post-link" href="{{ format.url | relative_url }}">
+            {{ format.title | escape }}
+          </a>
+        </h3>
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+</div>

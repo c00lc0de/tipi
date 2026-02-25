@@ -1,0 +1,72 @@
+<header class="site-header" role="banner">
+
+  <div class="wrapper">
+    <a class="site-title" rel="author" href="{{ "/" | relative_url }}">
+      {%- if site.logo -%}
+        <img src="{{ site.logo | relative_url }}" alt="{{ site.title | escape }}" class="site-logo" width="60" height="60">
+      {%- endif -%}
+      <span class="site-title-text">{{ site.title | escape }}</span>
+    </a>
+
+    {%- if site.header_nav and site.header_nav.size > 0 -%}
+      <nav class="site-nav" aria-label="Hauptnavigation">
+        <input type="checkbox" id="nav-trigger" class="nav-trigger" aria-label="Menü öffnen" />
+        <label for="nav-trigger" class="nav-trigger-label">
+          <span class="menu-icon" aria-hidden="true">
+            <svg class="menu-icon__svg" viewBox="0 0 24 20" width="24" height="20" aria-hidden="true">
+              <rect class="menu-icon__line menu-icon__line--top" x="2" y="2" width="20" height="2" rx="1"/>
+              <rect class="menu-icon__line menu-icon__line--mid" x="2" y="9" width="20" height="2" rx="1"/>
+              <rect class="menu-icon__line menu-icon__line--bottom" x="2" y="16" width="20" height="2" rx="1"/>
+            </svg>
+          </span>
+        </label>
+
+        <div class="trigger">
+          {%- for item in site.header_nav -%}
+            {%- if item.page -%}
+              {%- assign my_page = site.pages | where: "path", item.page | first -%}
+              {%- if my_page.title -%}
+              <a class="page-link" href="{{ my_page.url | relative_url }}">{{ my_page.title | escape }}</a>
+              {%- endif -%}
+            {%- elsif item.format -%}
+              {%- assign format_doc = site.formats | where: "slug", item.format | first -%}
+              {%- if format_doc -%}
+              <a class="page-link" href="{{ format_doc.url | relative_url }}">{{ item.label | default: format_doc.title | escape }}</a>
+              {%- endif -%}
+            {%- elsif item.dropdown -%}
+              {%- assign dd = item.dropdown -%}
+              {%- assign first_child_url = nil -%}
+              {%- for child in dd.children -%}
+                {%- if child.format -%}
+                  {%- assign format_doc = site.formats | where: "slug", child.format | first -%}
+                  {%- if format_doc -%}
+                    {%- if first_child_url == nil -%}
+                      {%- assign first_child_url = format_doc.url -%}
+                    {%- endif -%}
+                  {%- endif -%}
+                {%- endif -%}
+              {%- endfor -%}
+              <div class="nav-dropdown" data-dropdown>
+                {%- if dd.link == false -%}
+                <span class="page-link page-link--parent page-link--heading" aria-expanded="false" aria-haspopup="true" data-dropdown-trigger>{{ dd.title | escape }}</span>
+                {%- else -%}
+                <a class="page-link page-link--parent" href="{{ first_child_url | default: '#' | relative_url }}" aria-expanded="false" aria-haspopup="true" data-dropdown-trigger>{{ dd.title | escape }}</a>
+                {%- endif -%}
+                <ul class="nav-dropdown__menu" role="list" aria-label="{{ dd.title | escape }} Untermenü">
+                  {%- for child in dd.children -%}
+                    {%- if child.format -%}
+                      {%- assign format_doc = site.formats | where: "slug", child.format | first -%}
+                      {%- if format_doc -%}
+                  <li><a class="page-link nav-dropdown__link" href="{{ format_doc.url | relative_url }}">{{ child.label | escape }}</a></li>
+                      {%- endif -%}
+                    {%- endif -%}
+                  {%- endfor -%}
+                </ul>
+              </div>
+            {%- endif -%}
+          {%- endfor -%}
+        </div>
+      </nav>
+    {%- endif -%}
+  </div>
+</header>

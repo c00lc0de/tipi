@@ -1,0 +1,15 @@
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- if site.logo -%}
+  <link rel="icon" type="image/svg+xml" href="{{ site.logo | relative_url }}">
+  {%- endif -%}
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {%- if page.layout == 'home' -%}
+  <link rel="stylesheet" href="{{ '/assets/swiper-bundle.min.css' | relative_url }}" media="print" onload="this.media='all'">
+  <noscript><link rel="stylesheet" href="{{ '/assets/swiper-bundle.min.css' | relative_url }}"></noscript>
+  {%- endif -%}
+  {%- feed_meta -%}
+</head>

@@ -1,0 +1,461 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+// Override Minima's SASS variables before import – aligns theme with our palette
+$on-palm: 999999px;             // burger menu breakpoint (Minima default: 600px)
+$background-color: #ffedd4;
+$brand-color: #cd853f;        // --warm: default link color
+$text-color: #8b4513;  // --accent: no black text, unified warm palette
+$grey-color: #5d4e37;         // --muted
+$grey-color-light: #cd853f;    // borders, derived from palette
+$grey-color-dark: #8b4513;    // --accent
+
+@import "minima";
+
+// Playwrite DE Grund (OFL) – self-hosted, see assets/fonts/OFL.txt
+@font-face {
+  font-family: "Playwrite DE Grund";
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url("fonts/playwrite-de-grund-latin-400-normal.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC,
+    U+0304, U+0308, U+0329, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212,
+    U+2215, U+FEFF, U+FFFD;
+}
+
+// Theme colors as CSS custom properties (easy to override, cascade-friendly)
+:root {
+  --background: #ffedd4;
+  --accent: #8b4513;
+  --muted: #5d4e37;
+  --warm: #cd853f;
+}
+
+body {
+  background-color: var(--background);
+}
+
+// Homepage hero – full-width up to 1200px, centered on ultrawide
+.home-hero {
+  position: relative;
+  width: 100%;
+  max-width: calc(800px);
+  margin: 0 auto 2rem;
+  overflow: hidden;
+}
+
+.home-hero-swiper {
+  width: 100%;
+}
+
+.home-hero-slide {
+  /* Responsive aspect: wider on desktop, taller on mobile */
+  aspect-ratio: 21 / 9;
+
+  @media (max-width: 48em) {
+    aspect-ratio: 16 / 9;
+  }
+
+  @media (max-width: 30em) {
+    aspect-ratio: 4 / 3;
+  }
+
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+}
+
+/* Format hero – single image, same aspect/styling as home hero */
+.format-hero__image {
+  aspect-ratio: 21 / 9;
+
+  @media (max-width: 48em) {
+    aspect-ratio: 16 / 9;
+  }
+
+  @media (max-width: 30em) {
+    aspect-ratio: 4 / 3;
+  }
+
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    mask-image: none;
+    -webkit-mask-image: none;
+  }
+}
+
+/* Swiper pagination – theme colors */
+.home-hero .swiper-pagination-bullet {
+  background: rgba(255, 255, 255, 0.6);
+}
+
+.home-hero .swiper-pagination-bullet-active {
+  background: #fff;
+}
+
+.home-hero-credit {
+  position: absolute;
+  bottom: 0.5rem;
+  right: 1rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.85);
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+@media (max-width: 600px) {
+  .home-hero { margin-bottom: 1.5rem; }
+}
+
+// Header/footer borders in accent color
+.site-header {
+  border-top-color: var(--accent);
+  border-bottom-color: var(--accent);
+  padding: 0.5rem 0;
+}
+
+.site-header .wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.site-header .site-title {
+  margin: 0;
+}
+
+.site-header .site-nav {
+  display: flex;
+  align-items: center;
+  z-index: 2;
+
+  .page-link {
+    color: var(--accent);
+  }
+}
+
+// Burger icon: three lines animate into tent (tipi) when menu is open
+.menu-icon {
+  display: inline-block;
+  padding-top: 0.45rem !important;
+
+  .menu-icon__svg {
+    display: block;
+    overflow: visible;
+    margin: auto;
+  }
+
+  .menu-icon__line {
+    fill: var(--accent);
+    transition: transform 0.3s ease;
+  }
+
+  // Top line: pivots from bottom-left to form left side of tent
+  .menu-icon__line--top {
+    transform-origin: 8px 8px;
+  }
+
+  // Mid line: pivots from bottom-right to form right side of tent
+  .menu-icon__line--mid {
+    transform-origin: 11px 10px;
+  }
+
+  .menu-icon__line--bottom {
+    transition: transform 0.3s ease;
+  }
+}
+
+.nav-trigger:checked ~ .nav-trigger-label .menu-icon {
+  .menu-icon__line--top {
+    transform: rotate(56deg);
+  }
+
+  .menu-icon__line--mid {
+    transform: rotate(-56deg);
+  }
+
+  .menu-icon__line--bottom {
+    transform: none;
+  }
+}
+
+// Mobile: hamburger stays top-right; trigger content flows below it (no overlap)
+@media (max-width: #{$on-palm}) {
+  .site-header {
+    position: relative;
+  }
+
+  .site-nav {
+    input:checked ~ .nav-trigger-label,
+    input:checked ~ label[for="nav-trigger"] {
+      position: absolute;
+      top: 0;
+      right: 0;
+      float: none;
+    }
+
+    input:checked ~ .trigger {
+      padding-top: 42px; /* label height (36px) + gap */
+      clear: both;
+    }
+  }
+}
+
+// Dropdown: hover + focus-within (desktop), inline sub-list (mobile)
+.nav-dropdown {
+  position: relative;
+  display: inline-block;
+  line-height: 1.2;
+
+  .page-link--parent {
+    display: inline-flex;
+    align-items: center;
+    // gap: 0.2em;
+  }
+
+  .page-link--heading {
+    cursor: default;
+    text-decoration: none;
+  }
+
+  .page-link--parent::after {
+    content: "";
+    display: inline-block;
+    width: 0.4em;
+    height: 0.4em;
+    margin-left: 0.2em;
+    border-right: 1.5px solid currentColor;
+    border-bottom: 1.5px solid currentColor;
+    transform: rotate(45deg);
+    transition: transform 0.2s ease;
+  }
+
+  // Desktop: dropdown panel on hover/focus-within
+  @media (min-width: #{$on-palm + 1}) {
+    &:hover .nav-dropdown__menu,
+    &:focus-within .nav-dropdown__menu {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+
+    .page-link--parent[aria-expanded="true"]::after {
+      transform: rotate(-135deg);
+    }
+
+    .nav-dropdown__menu {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      min-width: 11em;
+      margin: 0;
+      padding: 0.5em 0;
+      list-style: none;
+      background: var(--background);
+      border: 1px solid var(--grey-color-light);
+      border-radius: 6px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-4px);
+      transition: opacity 0.2s ease, visibility 0.2s, transform 0.2s ease;
+      z-index: 100;
+    }
+
+    .nav-dropdown__link {
+      display: block;
+      padding: 0.4em 1em;
+      white-space: nowrap;
+    }
+
+    .nav-dropdown__link:hover {
+      background: rgba(139, 69, 19, 0.08);
+    }
+  }
+
+  // Mobile: sub-items in a distinct panel, visually grouped under parent
+  @media (max-width: #{$on-palm}) {
+    display: block;
+
+    .page-link--parent::after {
+      display: none;
+    }
+
+    .page-link--parent {
+      font-weight: 600;
+    }
+
+    .nav-dropdown__menu {
+      // margin: 0.25em 0 0 1em;
+      // padding: 0.4em 0;
+      list-style: none;
+      background: rgba(139, 69, 19, 0.06);
+      // border-left: 3px solid var(--accent);
+      // border-radius: 0 6px 6px 0;
+    }
+
+    .nav-dropdown__link {
+      display: block;
+      padding: 0.3em 1em;
+      font-size: 0.95em;
+      color: var(--muted);
+    }
+
+    .nav-dropdown__link:hover {
+      color: var(--accent);
+      background: rgba(139, 69, 19, 0.06);
+    }
+  }
+}
+
+.site-footer {
+  border-top-color: var(--accent);
+
+  .site-description {
+    color: var(--accent);
+    font-family: "Playwrite DE Grund";
+  }
+}
+
+.post-meta {
+  color: var(--muted);
+}
+
+// Logo and title side by side in header
+.site-title {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin: 0.5rem;
+}
+
+.site-logo {
+  flex-shrink: 0;
+  height: 60px;
+  width: auto;
+  vertical-align: middle;
+}
+
+.site-title-text {
+  font-family: "Playwrite DE Grund", cursive;
+  color: var(--accent);
+}
+
+.post-list-heading {
+  color: var(--accent);
+  position: relative;
+  display: inline-block;
+  padding-bottom: 0.5rem;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 10px;
+    background-color: var(--accent);
+    mask-image: url("masks/organic-underline.svg");
+    mask-size: 100% 100%;
+    mask-repeat: no-repeat;
+    mask-position: bottom;
+    -webkit-mask-image: url("masks/organic-underline.svg");
+    -webkit-mask-size: 100% 100%;
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: bottom;
+  }
+}
+
+.post-excerpt {
+  font-size: 0.9em;
+  color: var(--muted);
+  margin-top: 0.25rem;
+}
+
+.post-link {
+  color: var(--accent); // WCAG contrast: #8b4513 on #ffedd4 ≥ 4.5:1 (was #cd853f @ 2.6:1)
+
+  &:visited {
+    color: var(--muted);
+  }
+}
+
+// Post detail: format embed section
+.post-format-embed {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background: rgba(139, 69, 19, 0.06);
+  border-radius: 8px;
+  border-left: 3px solid var(--accent);
+
+  h2 {
+    margin-top: 0;
+  }
+}
+
+.post-format-badge {
+  margin-left: 0.5rem;
+  font-size: 0.9em;
+}
+
+.format-more-link {
+  margin-top: 1rem;
+  font-style: italic;
+}
+
+// About page
+.about-content {
+  display: grid;
+  gap: 1.5rem;
+  margin-top: 1.5rem;
+}
+
+.about-image img {
+  max-width: 280px;
+  border-radius: 8px;
+}
+
+.about-contact {
+  margin-bottom: 1.5rem;
+
+  a {
+    color: var(--warm);
+  }
+}
+
+@media (min-width: 600px) {
+  .about-content {
+    grid-template-columns: auto 1fr;
+    align-items: start;
+  }
+}
+
+// Subtle organic mask for content images (excludes header logo)
+main img {
+  mask-image: url("masks/organic-blob.svg");
+  mask-mode: luminance;
+  mask-size: 100% 100%;
+  mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-image: url("masks/organic-blob.svg");
+  -webkit-mask-size: 100% 100%;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-position: center;
+}

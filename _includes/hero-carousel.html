@@ -1,0 +1,19 @@
+{%- comment -%}
+  Hero carousel – full-width, 1 slide at a time (green-mountain.de style).
+  Rendered outside wrapper in default layout. Swiper CSS/JS loaded when page.layout == 'home'.
+{%- endcomment -%}
+<section class="home-hero" aria-label="Tipi NaturSein">
+  <div class="swiper home-hero-swiper">
+    <div class="swiper-wrapper">
+      {%- for slide in site.data.carousel.slides -%}
+      <div class="swiper-slide">
+        <div class="home-hero-slide">
+          <img src="{{ '/assets/' | append: slide.src | relative_url }}" alt="{{ slide.alt | escape }}" width="800" height="343" {% if forloop.first %}loading="eager" fetchpriority="high"{% else %}loading="lazy"{% endif %}>
+        </div>
+      </div>
+      {%- endfor -%}
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+  <div class="home-hero-credit">Foto: Loïc Leonardi</div>
+</section>

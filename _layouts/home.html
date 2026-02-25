@@ -1,0 +1,70 @@
+---
+layout: default
+---
+{%- assign today_str = site.time | date: "%Y-%m-%d" -%}
+{%- assign future_posts = site.posts | where_future: today_str | sort: "date" -%}
+{%- assign past_posts = site.posts | where_past: today_str | sort: "date" | reverse | limit: 5 -%}
+
+<div class="home">
+  {%- if page.title -%}
+    <h1 class="page-heading">{{ page.title }}</h1>
+  {%- endif -%}
+
+  {{ content }}
+
+  {%- if future_posts.size > 0 -%}
+    <h2 class="post-list-heading">Kommende Events</h2>
+    <ul class="post-list">
+      {%- for post in future_posts -%}
+      <li>
+        <span class="post-meta">{% include date-de.html date=post.date %}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts and post.excerpt != blank -%}
+          <div class="post-excerpt">{{ post.excerpt }}</div>
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- elsif site.posts.size > 0 -%}
+    <h2 class="post-list-heading">{{ page.list_title | default: "Events" }}</h2>
+    <ul class="post-list">
+      {%- for post in site.posts limit: 10 -%}
+      <li>
+        <span class="post-meta">{% include date-de.html date=post.date %}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts and post.excerpt != blank -%}
+          <div class="post-excerpt">{{ post.excerpt }}</div>
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+  {%- if past_posts.size > 0 and future_posts.size > 0 -%}
+    <h2 class="post-list-heading post-list-past">Vergangene Events</h2>
+    <ul class="post-list post-list-past">
+      {%- for post in past_posts -%}
+      <li>
+        <span class="post-meta">{% include date-de.html date=post.date %}</span>
+        <h3>
+          <a class="post-link" href="{{ post.url | relative_url }}">
+            {{ post.title | escape }}
+          </a>
+        </h3>
+        {%- if site.show_excerpts and post.excerpt != blank -%}
+          <div class="post-excerpt">{{ post.excerpt }}</div>
+        {%- endif -%}
+      </li>
+      {%- endfor -%}
+    </ul>
+  {%- endif -%}
+
+</div>

@@ -1,0 +1,58 @@
+---
+layout: default
+---
+{%- assign format_doc = nil -%}
+{%- if page.format -%}
+  {%- assign format_doc = site.formats | where: "slug", page.format | first -%}
+{%- endif -%}
+
+<article class="post h-entry" itemscope itemtype="http://schema.org/BlogPosting">
+
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">{{ page.title | escape }}</h1>
+    <p class="post-meta">
+      <time class="dt-published" datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
+        {% include date-de.html date=page.date %}
+      </time>
+      {%- if format_doc -%}
+        <span class="post-format-badge">
+          <a href="{{ format_doc.url | relative_url }}">{{ format_doc.title | escape }}</a>
+        </span>
+      {%- endif -%}
+      {%- if page.author -%}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span class="p-author h-card" itemprop="name">{{ page.author }}</span></span>
+      {%- endif -%}
+    </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {%- assign body_stripped = content | strip -%}
+    {%- if body_stripped != "" -%}
+      <div class="post-body">
+        {{ content }}
+      </div>
+    {%- endif -%}
+
+    {%- if format_doc -%}
+      {%- assign veranstaltung_datum = page.event_date | default: page.date -%}
+      {%- assign date_str = veranstaltung_datum | date: "%d.%m.%Y" -%}
+      {%- assign anmeldung_subject = "Anmeldung: " | append: format_doc.title | append: " – " | append: page.title | append: " (" | append: date_str | append: ")" -%}
+      {% capture anmeldung_link %}{% include obfuscated-email.html text="Anmeldung über die Website" subject=anmeldung_subject %}{% endcapture %}
+      <div class="post-format-embed">
+        <h2>{{ format_doc.title | escape }}</h2>
+        <div class="format-embed-content">
+          {{ format_doc.content | markdownify | replace: "[ANMELDUNG_LINK]", anmeldung_link }}
+        </div>
+        <p class="format-more-link">
+          <a href="{{ format_doc.url | relative_url }}">Mehr über dieses Format →</a>
+        </p>
+      </div>
+    {%- endif -%}
+  </div>
+
+  {%- if site.disqus.shortname -%}
+    {%- include disqus_comments.html -%}
+  {%- endif -%}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>

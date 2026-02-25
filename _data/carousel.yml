@@ -1,0 +1,10 @@
+# Hero carousel images – order matters (edit via Decap CMS)
+slides:
+  - src: uploads/carousel-regenbogen.webp
+    alt: Tipi mit Regenbogen – Natur und Magie
+  - src: uploads/carousel-vollmond.webp
+    alt: Vollmond durch Baumäste – mystische Dämmerung
+  - src: uploads/carousel-tipi-sterne.webp
+    alt: Tipi bei Nacht unter dem Sternenhimmel
+  - src: uploads/carousel-tipistangen.webp
+    alt: Innenansicht eines Tipis – Stangen und Zelttuch

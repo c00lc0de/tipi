@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+
+  <body>
+    {%- include header.html -%}
+
+    {%- if page.layout == 'home' -%}
+    {% include hero-carousel.html %}
+    {%- elsif page.layout == 'format' and page.hero_image -%}
+    {% include format-hero.html hero_image=page.hero_image hero_alt=page.hero_alt hero_credit=page.hero_credit %}
+    {%- endif -%}
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+    <script src="{{ '/assets/obfuscated-email.js' | relative_url }}"></script>
+    <script src="{{ '/assets/nav-dropdown.js' | relative_url }}"></script>
+    {%- if page.layout == 'home' -%}
+    <script src="{{ '/assets/home-carousel.js' | relative_url }}" defer></script>
+    {%- endif -%}
+  </body>
+
+</html>

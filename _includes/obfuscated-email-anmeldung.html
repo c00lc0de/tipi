@@ -1,0 +1,9 @@
+{%- comment -%}
+  Wrapper for obfuscated-email with subject "Anmeldung: [page title] (dd.mm.yyyy)".
+  Uses page.event_date if set, else page.date (Veranstaltungsdatum).
+  Use in post content for registration links.
+{%- endcomment -%}
+{%- assign veranstaltung_datum = page.event_date | default: page.date -%}
+{%- assign date_str = veranstaltung_datum | date: "%d.%m.%Y" -%}
+{%- assign anmeldung_subject = "Anmeldung: " | append: page.title | append: " (" | append: date_str | append: ")" -%}
+{% include obfuscated-email.html text="Anmeldung über die Webseite" subject=anmeldung_subject %}

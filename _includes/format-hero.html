@@ -1,0 +1,15 @@
+{%- comment -%}
+  Optional hero image for format pages. Uses same styling as home-hero.
+  Pass: hero_image (path relative to assets, e.g. uploads/format-mond-hero.png)
+        hero_alt, hero_credit (optional)
+{%- endcomment -%}
+{%- if include.hero_image -%}
+<section class="format-hero home-hero" aria-label="{{ include.hero_alt | default: 'Format' }}">
+  <div class="format-hero__image">
+    <img src="{{ '/assets/' | append: include.hero_image | relative_url }}" alt="{{ include.hero_alt | escape }}" loading="eager" fetchpriority="high">
+  </div>
+  {%- if include.hero_credit -%}
+  <div class="home-hero-credit">{{ include.hero_credit }}</div>
+  {%- endif -%}
+</section>
+{%- endif -%}

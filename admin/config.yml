@@ -1,0 +1,84 @@
+# Decap CMS config for Tipi (Jekyll on GitHub Pages)
+# See: https://decapcms.org/docs/jekyll/
+# Auth: Netlify Identity + Git Gateway – see ADMIN_SETUP.md
+
+backend:
+  name: git-gateway
+  branch: main
+  # Required when CMS is on GitHub Pages – full URLs for external domain
+  identity_url: https://tipinatursein.netlify.app/.netlify/identity
+  gateway_url: https://tipinatursein.netlify.app/.netlify/git/github
+
+# Site URL for correct redirects (custom domain)
+site_url: https://tipi-natursein.de
+
+# Where media uploads are stored (relative to repo root)
+media_folder: assets/uploads
+# Path for uploaded media (root deploy on both Netlify and GitHub Pages custom domain)
+public_folder: /assets/uploads
+locale: 'de'
+collections:
+  - name: formats
+    label: Formate
+    folder: _formats/
+    create: true
+    slug: "{{slug}}"
+    identifier_field: slug
+    summary: "{{title}}"
+    fields:
+      - { label: Layout, name: layout, widget: hidden, default: format }
+      - { label: Title, name: title, widget: string }
+      - { label: Slug, name: slug, widget: string, hint: "URL-Schlüssel (z.B. mond-frauen-treffen)" }
+      - { label: Hero-Bild, name: hero_image, widget: image, required: false }
+      - { label: Hero Alt-Text, name: hero_alt, widget: string, required: false }
+      - { label: Hero Fotograf, name: hero_credit, widget: string, required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: blog
+    label: Blog
+    folder: _posts/
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    editor:
+      preview: false
+    fields:
+      - { label: Layout, name: layout, widget: hidden, default: post }
+      - { label: Title, name: title, widget: string }
+      - { label: Publish Date, name: date, widget: datetime }
+      - { label: Categories, name: categories, widget: list, required: false }
+      - { label: Format, name: format, widget: relation, collection: formats, value_field: slug, display_fields: [title], search_fields: [title], required: false }
+      - { label: Body, name: body, widget: markdown }
+
+  - name: pages
+    label: Pages
+    editor:
+      preview: false
+    files:
+      - label: Formate (Übersicht)
+        name: formate
+        file: formate.markdown
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Layout, name: layout, widget: hidden, default: formate-index }
+          - { label: Permalink, name: permalink, widget: hidden, default: /formate/ }
+      - label: Hero-Carousel
+        name: carousel
+        file: _data/carousel.yml
+        fields:
+          - label: Bilder
+            name: slides
+            widget: list
+            summary: "{{fields.alt}}"
+            fields:
+              - { label: Bild, name: src, widget: image }
+              - { label: Alt-Text, name: alt, widget: string }
+      - label: Über mich (About)
+        name: about
+        file: about.markdown
+        fields:
+          - { label: Title, name: title, widget: string }
+          - { label: Layout, name: layout, widget: hidden, default: about }
+          - { label: Permalink, name: permalink, widget: hidden, default: /about/ }
+          - { label: Bild, name: image, widget: image, required: false }
+          - { label: E-Mail, name: email, widget: string }
+          - { label: Inhalt (Person & Ausbildungen), name: body, widget: markdown }

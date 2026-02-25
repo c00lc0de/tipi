@@ -1,0 +1,33 @@
+{
+  "name": "tipi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:carousel": "esbuild scripts/home-carousel.js --bundle --minify --outfile=assets/home-carousel.js && cp node_modules/swiper/swiper-bundle.min.css assets/swiper-bundle.min.css",
+    "serve": "npm run build:carousel && bundle exec jekyll serve",
+    "serve:dev": "npm run build:carousel && bundle exec jekyll build --config _config.yml,_config_netlify.yml && npx http-server _site -p 4000 -a localhost -c-1 -U dev -P dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/c00lc0de/tipi.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/c00lc0de/tipi/issues"
+  },
+  "homepage": "https://github.com/c00lc0de/tipi#readme",
+  "description": "",
+  "dependencies": {
+    "@fontsource/playwrite-de-grund": "^5.2.7",
+    "swiper": "^12.1.2"
+  },
+  "devDependencies": {
+    "esbuild": "^0.27.3"
+  }
+}

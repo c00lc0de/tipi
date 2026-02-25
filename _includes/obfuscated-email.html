@@ -1,0 +1,21 @@
+{%- comment -%}
+  Renders an obfuscated mailto link via JS (reduces bot harvesting).
+  Uses site.contact_email + site.contact_domain when email is omitted.
+  GitHub Pages compatible: no custom plugins required (uses data-local/data-domain).
+  Params: text (link text), subject (mailto subject), email (override default)
+  Usage: {% include obfuscated-email.html %} or {% include obfuscated-email.html text="Link" subject="Betreff" %}
+{%- endcomment -%}
+{%- if include.email != blank -%}
+  {%- assign local_part = include.email | split: "@" | first -%}
+  {%- assign domain_part = include.email | split: "@" | last -%}
+{%- else -%}
+  {%- assign local_part = "tipinatursein" -%}
+  {%- assign domain_part = "gmail.com" -%}
+  {%- if site.contact_email != blank -%}{%- assign local_part = site.contact_email -%}{%- endif -%}
+  {%- if site.contact_domain != blank -%}{%- assign domain_part = site.contact_domain -%}{%- endif -%}
+{%- endif -%}
+{%- assign link_text = include.text -%}
+{%- assign subject = include.subject -%}
+{%- assign _local = local_part | default: "tipinatursein" -%}
+{%- assign _domain = domain_part | default: "gmail.com" -%}
+<span class="obfuscated-email" data-local="{{ _local | escape }}" data-domain="{{ _domain | escape }}" {% if link_text != blank %}data-link-text="{{ link_text | escape }}"{% endif %}{% if subject != blank %} data-subject="{{ subject | escape }}"{% endif %}><noscript>{% if link_text != blank %}{{ link_text }}{% else %}{{ _local }} [at] {{ _domain }}{% endif %}</noscript></span>

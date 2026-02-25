@@ -1,0 +1,3 @@
+# Override for Netlify deployment (root URL, no /tipi subpath)
+baseurl: ""
+url: "https://tipinatursein.netlify.app"

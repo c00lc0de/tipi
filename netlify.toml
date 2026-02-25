@@ -1,0 +1,5 @@
+# Netlify build config (Git Gateway for Decap CMS).
+# Set Production branch to "deploy" in Netlify: Site settings > Build & deploy > Continuous deployment
+[build]
+  command = "npm run build:carousel && bundle exec jekyll build --config _config.yml,_config_netlify.yml"
+  publish = "_site"

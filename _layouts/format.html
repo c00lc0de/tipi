@@ -1,0 +1,16 @@
+---
+layout: default
+---
+{%- assign anmeldung_subject = "Anmeldung: " | append: page.title -%}
+{% capture anmeldung_link %}{% include obfuscated-email.html text="Anmeldung per Mail" subject=anmeldung_subject %}{% endcapture %}
+<article class="format format-detail">
+
+  <header class="format-header">
+    <h1 class="format-title">{{ page.title | escape }}</h1>
+  </header>
+
+  <div class="format-content">
+    {{ content | replace: "[ANMELDUNG_LINK]", anmeldung_link }}
+  </div>
+
+</article>

@@ -1,0 +1,7 @@
+{%- comment -%}
+  Format date in German: "11. Februar 2025"
+  Usage: {% include date-de.html date=post.date %}
+{%- endcomment -%}
+{%- assign d = include.date -%}
+{%- assign m = d | date: "%-m" | minus: 1 -%}
+{{ d | date: "%-d" }}. {{ site.data.date_de.months[m] }} {{ d | date: "%Y" }}
