@@ -2,6 +2,9 @@
 title: Storytelling – Sonntagnachmittage voller Geschichten
 slug: storytelling
 layout: format
+hero_image: uploads/tipi-hero.webp
+hero_alt: Tipi – Abend
+hero_credit: "Foto: Loïc Leonardi"
 ---
 
 Gemeinsam lauschen, teilen, staunen: Bei unseren Storytelling-Nachmittagen treffen sich Menschen jeden Alters, um Geschichten zu hören – mal frei erzählt, mal gelesen, manchmal improvisiert.

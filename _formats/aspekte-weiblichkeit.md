@@ -2,8 +2,8 @@
 title: Aspekte der Weiblichkeit
 slug: aspekte-weiblichkeit
 layout: format
-hero_image: uploads/carousel-tipistangen.webp
-hero_alt: Tipi – Aspekte der Weiblichkeit
+hero_image: uploads/vollmond-grau-mit-wolke.webp
+hero_alt: Vollmond - grau mit Wolke
 hero_credit: "Foto: Loïc Leonardi"
 ---
 

@@ -2,15 +2,16 @@
 title: BeRÜHRENDE HÄNDE
 slug: beruehrende-haende
 layout: format
+hero_image: uploads/regenbogen-voll.webp
+hero_alt: Tipi – Regenbogen
+hero_credit: "Foto: Loïc Leonardi"
 ---
 
 *Ausgleich von unGleichgewicht · In Einklang kommen · Being in Balance*
 
----
-
 Trotz des äußeren Anscheins haben wir vielleicht das Gefühl, dass etwas nicht stimmt, dass es ein Ungleichgewicht gibt, ein Unwohlsein, eine Müdigkeit..., die die Qualität der Interaktion mit uns selbst und der Welt beeinträchtigt.
 
-Die Arbeit, die ich vorschlage, ist sowohl präventiv als auch unterstützend bei der Wiederherstellung eines energetischen Gleichgewichts, bei einem bereits bestehenden Problem.
+Die Arbeit, die ich vorschlage, ist sowohl präventiv als auch unterstützend zur Wiederherstellung eines energetischen Gleichgewichts, bei einem bereits bestehenden Problem.
 Die Hände sind das Medium, und der Körper ist das Mittel, um das Gleichgewicht wiederherzustellen und alle Teile von uns wieder in Kontakt und in Kommunikation zu bringen, auch die Vergessenen oder Verborgenen.
 
 In diesen Energieausgleichssitzungen hilft der Kontakt der Hände, die Aufmerksamkeit zu lenken, sich zu spüren und in tiefen Kontakt mit sich selbst zu kommen.
@@ -25,6 +26,5 @@ Die Sitzung dauert zwischen 45 und 60 Minuten und findet in drei Phasen statt:
 
 **Die Rückkehr:** Entspannung  
 
----
 
 *Termin nach Absprache*

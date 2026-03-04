@@ -2,6 +2,9 @@
 title: Einzelcoaching Naturverbundene Prozessbegleitung
 slug: einzelcoaching
 layout: format
+hero_image: uploads/tipistangen-spitzen.webp
+hero_alt: Tipistangen ohne Zelt
+hero_credit: "Foto: Loïc Leonardi"
 ---
 
 Die naturverbundene Prozessbegleitung im Einzelcoaching ist ein achtsamer Raum für Frauen, die sich selbst wieder näherkommen möchten. Ein Raum, in dem das eigene Gewahrwerden geschehen darf – leise, ehrlich und ohne Druck. Es geht nicht darum, sich zu optimieren oder zu reparieren, sondern darum, wahrzunehmen: Was zeigt sich gerade in meinem Leben? Was möchte gesehen werden? Was in mir will sich wandeln?
@@ -16,6 +19,5 @@ In der naturverbundenen Prozessbegleitung dürfen innere Übergänge bewusst ges
 
 Am Ende steht kein fertiges Konzept, sondern ein gestärkter Kontakt zu sich selbst. Ein tieferes Gewahrsein. Und oft ein stilles Wissen: Der nächste Schritt ist bereits da.
 
----
 
 *Termin und Zeitplanung in Absprache der persönlichen Bedürfnisse, Notwendigkeiten und Möglichkeiten.*

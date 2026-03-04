@@ -2,8 +2,8 @@
 title: Julfest
 slug: julfest
 layout: format
-hero_image: uploads/carousel-tipistangen.webp
-hero_alt: Tipi im Winter – Julfest
+hero_image: uploads/rosa-himmel.webp
+hero_alt: Abendrot - Rosa Himmel
 hero_credit: "Foto: Loïc Leonardi"
 ---
 

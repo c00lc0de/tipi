@@ -2,6 +2,9 @@
 title: Tiyoweh – Wochenenden der Stille für Frauen
 slug: tiyoweh
 layout: format
+hero_image: uploads/format-mond-hero.webp
+hero_alt: Baum und Vollmond im Feld – mystische Nacht
+hero_credit: "Foto: Loïc Leonardi"
 ---
 
 Tauche ein in die Stille: zwei Tage nur für dich, um zur Ruhe zu kommen, die Gedanken loszulassen und dich selbst wieder bewusst wahrzunehmen.

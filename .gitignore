@@ -3,6 +3,7 @@ node_modules
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
+.idea
 vendor
 docs/
 material/

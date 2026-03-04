@@ -2,8 +2,8 @@
 title: Feste
 slug: feste
 layout: format
-hero_image: uploads/carousel-tipistangen.webp
-hero_alt: Innenansicht eines Tipis – Gemeinschaft im Kreis
+hero_image: uploads/tipi-schraeg-sterne.webp
+hero_alt: Tipi schräg mit Sternen
 hero_credit: "Foto: Loïc Leonardi"
 ---
 

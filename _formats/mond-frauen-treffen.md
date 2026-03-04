@@ -2,7 +2,7 @@
 title: Mond-Frauen-Treffen
 slug: mond-frauen-treffen
 layout: format
-hero_image: uploads/format-mond-hero.png
+hero_image: uploads/format-mond-hero.webp
 hero_alt: Baum und Vollmond im Feld – mystische Nacht
 hero_credit: "Foto: Loïc Leonardi"
 ---

@@ -2,8 +2,8 @@
 title: Sommer = Fülle
 slug: sommer-fulle
 layout: format
-hero_image: uploads/carousel-tipistangen.webp
-hero_alt: Tipi – Sommer und Fülle
+hero_image: uploads/sommer-vollmond-gelb.webp
+hero_alt: Vollmond – Sommerlich in gelb
 hero_credit: "Foto: Loïc Leonardi"
 ---
 
