@@ -8,7 +8,7 @@ hero_credit: "Foto: Loïc Leonardi"
 ---
 *Text folgt – Wochenende zu Aspekten der Weiblichkeit im Tipi NaturSein.*
 
-An dieser Stelle findest du bald Details zum Wochenende: Termine, Ablauf, Beitrag und Anmeldung. Danke
+An dieser Stelle findest du bald Details zum Wochenende: Termine, Ablauf, Beitrag und Anmeldung.
 
 **Ort:** Tipi „NaturSein“ auf dem Gestüt Anne Trappe, Havixbeck  
 
