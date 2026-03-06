@@ -7,16 +7,13 @@
     <title>Content Manager</title>
     <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     <script>
-      (function() {
-        var apiUrl = 'https://tipinatursein.netlify.app/.netlify/identity';
-        if (location.origin !== 'https://tipinatursein.netlify.app') {
-          netlifyIdentity.init({ APIUrl: apiUrl });
-        }
-      })();
+      // Always init with Netlify URL - required when site is on custom domain (GitHub Pages)
+      if (window.netlifyIdentity) {
+        window.netlifyIdentity.init({ APIUrl: 'https://tipinatursein.netlify.app/.netlify/identity' });
+      }
     </script>
   </head>
   <body>
-    <!-- Include the script that builds the page and powers Decap CMS -->
     <script src="https://unpkg.com/decap-cms@^3.0.0/dist/decap-cms.js"></script>
   </body>
 </html>
