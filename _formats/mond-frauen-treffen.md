@@ -28,6 +28,7 @@ Dieser Kreis ist für Frauen, die sich nach Authentizität sehnen, die mehr Klar
 
 Mit Respekt für die spirituelle Herkunft der Lehren schaffen wir einen geschützten Raum, in dem du dich weiterentwickeln, wachsen und deine innere Stärke entdecken kannst.
 
-DIES IST EINE JAHRESGRUPPE :
+**DIES IST EINE FESTE JAHRESGRUPPE!**
 
 Start ist jedes Jahr im Dezember, bei Interesse:
+**E - Mail:** \[ANMELDUNG_LINK]
