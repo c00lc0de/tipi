@@ -6,16 +6,17 @@ hero_image: uploads/vollmond-grau-mit-wolke.webp
 hero_alt: Vollmond - grau mit Wolke
 hero_credit: "Foto: Loïc Leonardi"
 ---
+**Aspekte der Weiblichkeit** (nur für Frauen)
 
-**14.-16. August 2026 Aspekte der Weiblichkeit (**nur für Frauen)
+**14.-16. August 2026**
 
 Begegnung mit Inanna der Mondgöttin
 
-Ein Reise zur Urweiblichen Kraft.
+Eine Reise zur Urweiblichen Kraft.
 
-Freitag 14. August um 16.00 Uhr Anreise bis Sonntag 16.August um 15.00 Uhr
+Start: Freitag, 14. August um 16.00 Uhr 
 
-
+Bis: Sonntag 16. August um 15.00 Uhr
 
 Was dich erwartet:
 
@@ -33,7 +34,7 @@ Essen: nach Absprache bringt jeder etwas mit.
 
 Teilnahmebeitrag:
 
-Basis: 130 €/Normal: 180 €/Alles darüber hinaus ist willkommen
+Basis: 130 € und Normal: 180 € . Alles darüber hinaus ist willkommen!
 
 **Ort:** Tipi „NaturSein“ auf dem Gestüt Anne Trappe, Havixbeck  
 
