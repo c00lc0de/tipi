@@ -39,9 +39,7 @@ Ende circa 11.30 Uhr am 24.06.2026
 
 Dauer: Montag  Nachmittag bis Dienstag Mittag (Übernachtung inklusive)
 
-**Beitrag:**
-
- Basisbeitrag: 60 € und Normal 90 €
+**Beitrag:** Basisbeitrag: 60 € und Normal 90 €
 
 Alles darüber hinaus ist willkommen und hilft, die Arbeit zu ermöglichen.
 
