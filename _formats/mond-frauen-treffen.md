@@ -6,7 +6,7 @@ hero_image: uploads/format-mond-hero.webp
 hero_alt: Baum und Vollmond im Feld – mystische Nacht
 hero_credit: "Foto: Loïc Leonardi"
 ---
-# Frauenkreis: Die 13 Clanmütter – Ein Weg zu authentischem Frausein
+### Die 13 Clanmütter – Ein Weg zu authentischem Frausein
 
 Es gibt Wege, die uns zurückführen zu dem, was wir im Innersten sind. In diesem Frauenkreis folgen wir den Spuren der 13 Clanmütter – Hüterinnen von Wahrheit, Mitgefühl, Kreativität und innerem Wissen. Jede von ihnen öffnet eine Tür zu einem Aspekt unseres Frauseins, der gesehen, erinnert und gelebt werden möchte.
 
@@ -16,7 +16,7 @@ Der Kreis lädt dich ein, dein eigenes Frausein jenseits äußerer Rollenbilder 
 
 Hier geht es um Weiterentwicklung: darum, dich selbst besser zu verstehen, alte Muster zu lösen, und deiner eigene Kraft kennenzulernen und ihr Raum zu geben.
 
-## Was erwartet dich?
+#### Was erwartet dich?
 
 * Einführung in die jeweilige Clanmutter und ihre symbolische Bedeutung
 * Achtsame Prozesse, die dich zu deinem eigenen Kern zurückführen
