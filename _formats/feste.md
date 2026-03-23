@@ -10,7 +10,7 @@ hero_credit: "Foto: Loïc Leonardi"
 
 Alle sind zu jeder Zeit willkommen! 
 
-Es ist eine wunderbare Möglichkeit, einfach und  achtsam beisammen zu sein 
+Es ist eine wunderbare Möglichkeit, einfach und  achtsam beisammen zu sein, 
 
 um den Jahreszyklus zu feiern:
 
@@ -22,7 +22,6 @@ Frühling- Sommer -Herbst-(-Winter)
 
 circa 10.00 Uhr-16:00 Uhr
 
-
 Die Feste gestalten alle Beteiligten zusammen, bringt gerne etwas zum Teilen mit
 
 Etwas Nahrhaftes für den Körper ( in Form einer Speise)
@@ -32,8 +31,6 @@ Etwas Nahrhaftes für die Gemeinschaft, ein Lied, eine Übung, ein Spiel, ein Ta
 Ich werde um gegen 11:00 Uhr zu einem Schwellengang einladen.´
 
 Gemeinsames Mittagessen und am Feuer sitzen
-
-
 
 **18. April 2026 Tipi -Frühlingsfest** 
 
@@ -47,15 +44,11 @@ Thema: Fülle und Freude
 
 Thema: Ernte, Was hab ich gesammelt?
 
-
-
 **Teilnahmebeitrag:**
 
 Der Beitrag liegt in der Höhe, die sich für dich gut und richtig anfühlt.
 
 Eine Unterstützer-Freunde -Beitrags Box  findet ihr  vor Ort!
-
-
 
 **Ort:** Tipi „NaturSein“ auf dem Gestüt Anne Trappe, Havixbeck  
 
