@@ -1,12 +1,11 @@
 ---
+layout: format
 title: BeRÜHRENDE HÄNDE
 slug: beruehrende-haende
-layout: format
 hero_image: uploads/regenbogen-voll.webp
 hero_alt: Tipi – Regenbogen
 hero_credit: "Foto: Loïc Leonardi"
 ---
-
 *Ausgleich von unGleichgewicht · In Einklang kommen · Being in Balance*
 
 Trotz des äußeren Anscheins haben wir vielleicht das Gefühl, dass etwas nicht stimmt, dass es ein Ungleichgewicht gibt, ein Unwohlsein, eine Müdigkeit..., die die Qualität der Interaktion mit uns selbst und der Welt beeinträchtigt.
@@ -26,5 +25,5 @@ Die Sitzung dauert zwischen 45 und 60 Minuten und findet in drei Phasen statt:
 
 **Die Rückkehr:** Entspannung  
 
-
 *Termin nach Absprache*
+**Kontakt:** \[ANMELDUNG_LINK]
