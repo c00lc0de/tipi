@@ -32,9 +32,10 @@ Wir übernachten in Zelten, (eigenen oder im Tipi), wir kochen überm Feuer.
 
 Essen: nach Absprache bringt jeder etwas mit.
 
-Teilnahmebeitrag:
+**Teilnahmebeitrag:** 
 
-Basis: 130 € und Normal: 180 € . Alles darüber hinaus ist willkommen!
+Basis: 130 € und Normal: 180 € . 
+Alles darüber hinaus ist willkommen und hilft, die Arbeit zu ermöglichen.
 
 **Ort:** Tipi „NaturSein“ auf dem Gestüt Anne Trappe, Havixbeck  
 
