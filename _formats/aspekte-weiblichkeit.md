@@ -6,9 +6,7 @@ hero_image: uploads/vollmond-grau-mit-wolke.webp
 hero_alt: Vollmond - grau mit Wolke
 hero_credit: "Foto: Loïc Leonardi"
 ---
-**Aspekte der Weiblichkeit** (nur für Frauen)
-
-**14.-16. August 2026**
+**14.-16. August 2026 (nur für Frauen)**
 
 Begegnung mit Inanna der Mondgöttin
 
