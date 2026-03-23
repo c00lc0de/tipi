@@ -6,10 +6,6 @@ hero_image: uploads/sommer-vollmond-gelb.webp
 hero_alt: Vollmond – Sommerlich in gelb
 hero_credit: "Foto: Loïc Leonardi"
 ---
-
-
-
-
 **Der Sommer- die Fülle**
 
 **19.-20. Juni 2026** 
@@ -28,10 +24,10 @@ Wir übernachten in Zelten, (eigenen oder im Tipi), wir kochen überm Feuer.
 
 Essen: Nach Absprache bringt jeder etwas mit.
 
-Teilnahmebeitrag:
+**Teilnahmebeitrag:**
 
-Basis: 100 € und Normal: 150 € Alles darüber hinaus willkommen!
-
+Basis: 100 € und Normal: 150 € 
+Alles darüber hinaus ist willkommen und hilft, die Arbeit zu ermöglichen.
 
 **Ort:** Tipi „NaturSein“ auf dem Gestüt Anne Trappe, Havixbeck  
 
