@@ -2,8 +2,8 @@
 layout: format
 title: Mond-Frauen-Kreis
 slug: mond-frauen-kreis
-hero_image: uploads/format-mond-hero.webp
-hero_alt: Baum und Vollmond im Feld – mystische Nacht
+hero_image: uploads/sommer-vollmond-gelb.webp
+hero_alt: Vollmond – Sommerlich in gelb
 hero_credit: "Foto: Loïc Leonardi"
 ---
 ### Die 13 Clanmütter – Ein Weg zu authentischem Frausein

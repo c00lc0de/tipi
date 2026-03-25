@@ -2,8 +2,8 @@
 layout: format
 title: Sommer = Fülle
 slug: sommer-fulle
-hero_image: uploads/sommer-vollmond-gelb.webp
-hero_alt: Vollmond – Sommerlich in gelb
+hero_image: uploads/sonnenaufgang-sommer-fuelle.webp
+hero_alt: Sommerlicher Sonnenaufgang
 hero_credit: "Foto: Loïc Leonardi"
 ---
 
