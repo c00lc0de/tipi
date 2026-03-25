@@ -6,7 +6,6 @@ hero_image: uploads/sonnenaufgang-sommer-fuelle.webp
 hero_alt: Sommerlicher Sonnenaufgang
 hero_credit: "Foto: Loïc Leonardi"
 ---
-
 **Übernachtungsworkshop mit dem Thema: Fülle und Süden**
 
 **19.-20. Juni 2026** 
@@ -17,13 +16,13 @@ Bis: Samstag, 20.07 um 17.00 Uhr circa
 
 zusätzliche Teilnahme am Sommerfest Sonntag, den 21. Juni (siehe Feste) ist willkommen!
 
-Thema : Wie stärke ich meinen Süden? - Das innere Kind nähren!
+**Thema :** Wie stärke ich meinen Süden? - Das innere Kind nähren!
 
 Spiele, Übungen, Naturerfahrungen und Betrachtungen.
 
 Wir übernachten in Zelten, (eigenen oder im Tipi), wir kochen überm Feuer.
 
-Essen: Nach Absprache bringt jeder etwas mit.
+**Essen:** Nach Absprache bringt jede etwas mit.
 
 **Teilnahmebeitrag:**
 
