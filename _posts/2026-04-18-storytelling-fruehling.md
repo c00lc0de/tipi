@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Storytelling – Frühling
-date: 2026-04-19T15:00:00.000+01:00
+date: 2026-04-18T15:00:00.000+01:00
 categories:
   - Storytelling
 format: storytelling
