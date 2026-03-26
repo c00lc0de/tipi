@@ -37,7 +37,7 @@ Waschung am nächsten Morgen.
 
 Ende circa 11.30 Uhr am 24.06.2026
 
-Dauer: Montag  Nachmittag bis Dienstag Mittag (Übernachtung inklusive)
+**Dauer:** Montag  Nachmittag bis Dienstag Mittag (Übernachtung inklusive)
 
 **Beitrag:** Basisbeitrag: 60 € und Normal 90 €
 
