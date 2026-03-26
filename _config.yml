@@ -61,8 +61,10 @@ header_nav:
           format: beruehrende-haende
         - label: Naturverbundene Prozess Begleitung
           format: einzelcoaching
-  - format: mond-frauen-treffen
-    label: Mond-Frauen-Kreis
+  - label: Mond-Frauen-Kreis
+    format: mond-frauen-kreis
+  - label: Erfahrungen
+    format: erfahrungen
   - page: impressum.markdown
 url: "https://tipi-natursein.de" # custom domain
 # twitter_username: jekyllrb
