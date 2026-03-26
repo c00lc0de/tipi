@@ -1,0 +1,64 @@
+.zitate-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 2rem;
+  margin: 2rem 0;
+}
+
+.zitat {
+  background-color: #faf9f7;
+  border-left: 6px solid #b97f44;
+  padding: 1.5rem;
+  border-radius: 0 12px 12px 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+.zitat:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.zitat-text {
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #2c2b28;
+  margin-bottom: 1rem;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  white-space: normal;
+}
+
+.zitat-name {
+  font-weight: 600;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #b97f44;
+  border-top: 1px solid #e2e0db;
+  padding-top: 0.75rem;
+  margin-top: 0.5rem;
+  text-align: right;
+}
+
+.zitat-text::before {
+  content: "„";
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #b97f44;
+  opacity: 0.5;
+  font-family: serif;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+
+.zitat-text::after {
+  content: "“";
+  font-size: 1.8rem;
+  line-height: 1;
+  color: #b97f44;
+  opacity: 0.5;
+  font-family: serif;
+  margin-left: 4px;
+  vertical-align: bottom;
+}
