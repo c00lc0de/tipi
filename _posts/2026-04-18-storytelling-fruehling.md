@@ -6,4 +6,4 @@ categories:
   - Storytelling
 format: storytelling
 ---
-Sonntag 15:00 Uhr. Geschichten von Neubeginn, zarten Knospen und dem Mut, wieder zu wachsen.
+Samstag 15:00 Uhr. Geschichten von Neubeginn, zarten Knospen und dem Mut, wieder zu wachsen.
