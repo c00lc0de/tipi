@@ -19,11 +19,8 @@ Ein Raum zum Ankommen, Verbinden und Träumen.
 **18. April – Frühling**\
 Geschichten von Neubeginn, zarten Knospen und dem Mut, wieder zu wachsen. Ein Nachmittag voller Aufbruchsstimmung und leiser Hoffnung.
 
-**17. Mai – Stille**\
+**17. Mai – Stille (fällt aus)**\
 Momente, in denen das Unausgesprochene spricht: innere Ruhe, Atempausen und die kleinen Wunder, die nur in der Stille hörbar werden.
-
-**07. Juni – Achtsamkeit**\
-Geschichten, die langsamer werden lassen: bewusst wahrnehmen, innehalten, mit wachen Sinnen im Jetzt sein.
 
 **02. August – Fülle**\
 Sommerliche Bilder von Überfluss, Teilen und Dankbarkeit – eine Einladung, das Reiche im Leben zu entdecken.
