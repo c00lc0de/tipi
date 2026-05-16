@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Tiyoweh – Stille Retreat
-date: 2026-06-04T16:00:00.000+01:00
+date: 2026-07-03T17:00:00.000+02:00
 categories:
   - Tiyoweh
 format: tiyoweh
