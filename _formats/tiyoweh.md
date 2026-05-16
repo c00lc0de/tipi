@@ -17,7 +17,7 @@ Inklusive Übernachtung (im Tipi oder eigenem Zelt – Isomatte und Schlafsack s
 
 ## Termine 2026
 
-* **03.–07. Juni** – Entspannung und innere Ruhe  
+* **03.–05. Juli** – Entspannung und innere Ruhe  
 * **18.–20. September** – Spätsommer/Herbst: Rückzug, Reflexion, Sammlung  
 
 ## Ablauf (Beispiel)
