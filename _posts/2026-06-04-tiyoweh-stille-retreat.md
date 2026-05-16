@@ -6,4 +6,4 @@ categories:
   - Tiyoweh
 format: tiyoweh
 ---
-04.–06. Juni. Thema: Entspannung und innere Ruhe. Freitag Nachmittag bis Sonntag Mittag.
+03.–05. Juli. Thema: Entspannung und innere Ruhe. Freitag Nachmittag bis Sonntag Mittag.
