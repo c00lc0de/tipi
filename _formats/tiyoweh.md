@@ -20,6 +20,11 @@ Inklusive Übernachtung (im Tipi oder eigenem Zelt – Isomatte und Schlafsack s
 * **03.–05. Juli** – Entspannung und innere Ruhe  
 * **18.–20. September** – Spätsommer/Herbst: Rückzug, Reflexion, Sammlung  
 
+## Termine 2027
+
+* **14.–15. Mai**
+* **10.–12. September**
+
 ## Ablauf (Beispiel)
 
 * **Freitag:** Ankommen am Nachmittag, Tipi beziehen, erstes gemeinsames Ankommen am Feuer  

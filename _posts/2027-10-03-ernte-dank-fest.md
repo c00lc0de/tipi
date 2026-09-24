@@ -1,16 +1,14 @@
 ---
 layout: post
 title: Ernte-Dank-Fest
-date: 2026-10-03T10:00:00.000+01:00
+date: 2027-10-03T10:00:00.000+02:00
 categories:
   - Feste
 ---
-Thema: Ernte.
+Sonntag 10:00–16:00 Uhr. Thema: Ernte.
 
 Das Erntedankfest gestalten alle Beteiligten zusammen – bringt gerne etwas zum Teilen mit:
 - Etwas Nahrhaftes für den Körper (in Form einer Speise)
 - Etwas Nahrhaftes für die Gemeinschaft: ein Lied, eine Übung, ein Spiel, ein Tanz oder…
 
 Gegen 11:00 Uhr laden wir zu einem Schwellengang ein. Gemeinsames Mittagessen und Feuersitzen.
-
-**Mond-Frauen-Kreis 2027:** Beim Ernte-Dank-Fest gibt es Infos und die Möglichkeit zum Kennenlernen für den neuen [Mond-Frauen-Kreis](/formate/mond-frauen-kreis/), der im Januar 2027 startet.

@@ -44,6 +44,20 @@ Thema: Fülle und Freude
 
 Thema: Ernte, Was hab ich gesammelt?
 
+**Termine 2027**
+
+**18. April 2027 Tipi-Aufbau – Frühlingsfest**
+
+Thema: Frühling und Erwachen
+
+**20. Juni 2027 Das Sommerfest**
+
+Thema: Fülle und Freude
+
+**03. Oktober 2027 Das Ernte-Dank-Fest**
+
+Thema: Ernte, Was hab ich gesammelt?
+
 **Teilnahmebeitrag:**
 
 Der Beitrag liegt in der Höhe, die sich für dich gut und richtig anfühlt.

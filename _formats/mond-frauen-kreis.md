@@ -30,5 +30,24 @@ Mit Respekt für die spirituelle Herkunft der Lehren schaffen wir einen geschüt
 
 **DIES IST EINE FESTE JAHRESGRUPPE!**
 
-Start ist jedes Jahr im Dezember, bei Interesse:
-**E - Mail:** \[ANMELDUNG_LINK]
+## Info und Kennenlernen
+
+**Samstag, 03. Oktober 2026, 10–16 Uhr** beim [Ernte-Dank-Fest](/formate/feste/)
+
+## Termine 2027
+
+* **07.01.2027** – Donnerstag
+* **07.02.2027** – Sonntag
+* **09.03.2027** – Dienstag
+* **06.04.2027** – Dienstag
+* **06.05.2027** – Donnerstag
+* **06.06.2027** – Sonntag
+* **04.07.2027** – Sonntag (alternativ 26.06.2027!)
+* **03.08.2027** – Dienstag
+* **31.08.2027** – Dienstag
+* **30.09.2027** – Donnerstag
+* **26.10.2027** – Dienstag
+* **28.11.2027** – Sonntag
+* **21.12.2027** – Dienstag
+
+**Anmeldung:** \[ANMELDUNG_LINK]
